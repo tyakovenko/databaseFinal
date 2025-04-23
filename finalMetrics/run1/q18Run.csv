@@ -1,0 +1,871 @@
+execution,execution_time,stats,explain_query_plan
+1,2.7378374229992914,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+2,2.7769865800000844,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+3,2.598554566999155,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+4,2.586816329001522,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+5,2.4874648450004315,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+6,2.4649621629996545,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+7,2.4431862580004235,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+8,2.423474403,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+9,2.4423574689990346,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+10,2.4574330859995825,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+11,2.5320552630000748,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+12,2.4343691779995424,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+13,2.458633671998541,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+14,2.4424397879993194,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+15,2.456377855000028,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+16,2.44262287499987,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+17,2.463935294001203,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+18,2.4411347980003484,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+19,2.455868852999629,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+20,2.4373795250012336,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+21,2.438401557999896,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+22,2.4414717409999867,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+23,2.4377576150000095,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+24,2.452539918000184,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+25,2.4431366340013483,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+26,2.5317450290003762,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+27,2.4559958949994325,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+28,2.4512924549999298,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+29,2.442589444999612,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"
+30,2.444745048000186,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+|--LIST SUBQUERY 1
+|  `--SCAN lineitem USING INDEX sqlite_autoindex_LINEITEM_1
+|--SEARCH customer USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH lineitem USING INDEX sqlite_autoindex_LINEITEM_1 (L_ORDERKEY=?)
+`--USE TEMP B-TREE FOR ORDER BY"

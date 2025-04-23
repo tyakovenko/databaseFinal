@@ -1,0 +1,781 @@
+execution,execution_time,stats,explain_query_plan
+1,3.3757246950008266,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+2,3.328388972000539,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+3,3.136486645002151,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+4,3.1686217620008392,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+5,3.189291807997506,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+6,2.8943413900015003,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+7,3.2766794249982922,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+8,2.8628528520021064,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+9,2.8397055469977204,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+10,2.809540678998019,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+11,2.808741982000356,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+12,2.8010405259992694,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+13,2.7674038059994928,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+14,2.764801471003011,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+15,2.7889533109992044,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+16,2.7853832020009577,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+17,2.7852017219993286,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+18,2.8073867249986506,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+19,2.796959938001237,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+20,2.810842391998449,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+21,2.8070982300014293,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+22,2.810638213999482,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+23,2.81039597400013,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+24,2.8562967120014946,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+25,2.8168302369995217,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+26,2.8209293430008984,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+27,2.830547399000352,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+28,2.8109730030009814,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+29,2.8129615409998223,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"
+30,2.798074815000291,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN lineitem
+|--SEARCH orders USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR GROUP BY"

@@ -1,13 +1,10 @@
-#automate statistics for query processing and recording the data
+#same file as automate but now this will run through the command line to avoid data polution
+#each file was run 30 times, processing 1 file at a time
+import sys
 import sqlite3
 import subprocess
 import time
 import pandas as pd
-
-
-database_file = "/home/taya/Downloads/tpch.db"
-numQueries = 22 #the number of sql query files to be processed
-num_executions = 30
 
 def runOneSQL (database_file, sql_file, num_executions, csvSave):
     #we do not record the query execution results here
@@ -69,38 +66,13 @@ def runOneSQL (database_file, sql_file, num_executions, csvSave):
     # You can now further analyze or save the DataFrame to a file (e.g., CSV)
     df.to_csv(csvSave, index=False)
 
-#run all files
-"""for i in range(22) :
-    runOneSQL(database_file,
-              f"/home/taya/PycharmProjects/databaseFinal/tpchQueriesSQLlTE/q{i+1}.sql",
-              num_executions,
-              f"/home/taya/PycharmProjects/databaseFinal/finalMetrics/q{i+1}Run.csv")
-    print(f"done processing file {i+1}")
-"""
 
-runOneSQL(database_file,
-              f"/home/taya/PycharmProjects/databaseFinal/tpchQueriesSQLlTE/q17.sql",
-              num_executions,
-              f"/home/taya/PycharmProjects/databaseFinal/finalMetrics/q17Run.csv")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if __name__ == "__main__":
+    if len(sys.argv) == 5:
+        database_file = sys.argv[1]
+        sql_file = sys.argv[2]
+        num_executions = int(sys.argv[3])
+        csvSave = sys.argv[4]
+        runOneSQL(database_file, sql_file, num_executions, csvSave)
+    else:
+        print("Not enough arguments")

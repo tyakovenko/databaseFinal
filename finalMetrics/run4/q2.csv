@@ -1,0 +1,1361 @@
+execution,execution_time,stats,explain_query_plan,approximate_memory_used_bytes
+1,0.6174399060000724,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",2.564
+2,0.44146564999937254,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.38400000000000034
+3,0.43150250899998355,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+4,0.4356357680007932,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.1280000000000001
+5,0.4313480830005574,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+6,0.4423308679997717,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+7,0.4275529370006552,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+8,0.44259898500058625,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+9,0.45550976499907847,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+10,0.453576146001069,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+11,0.4481897030000255,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+12,0.47012320200155955,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+13,0.44694957100000465,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+14,0.4378598940002121,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+15,0.4421729810001125,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+16,0.4317948330008221,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+17,0.4399264599996968,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+18,0.4288099890000012,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+19,0.46335500500026683,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+20,0.5334292560000904,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+21,0.5108498789995792,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+22,0.4506197009995958,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+23,0.43195467199984705,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+24,0.43779871799961256,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+25,0.4433291929999541,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+26,0.43368559699956677,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+27,0.42661361299906275,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+28,0.43341199200040137,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+29,0.43111010800021177,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+30,0.44165937099933217,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+31,0.43863300300108676,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+32,0.4393936729993584,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+33,0.43192482799895515,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+34,0.435922426999241,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+35,0.4358015769994381,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+36,0.43126126900097006,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+37,0.4385197609990428,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+38,0.4350712380000914,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+39,0.4384148129993264,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0
+40,0.42402181299985386,"Memory Used:                         63952 (max 64080) bytes
+Number of Outstanding Allocations:   151 (max 152)
+Number of Pcache Overflow Bytes:     4104 (max 4104) bytes
+Largest Allocation:                  48000 bytes
+Largest Pcache Allocation:           4104 bytes
+Lookaside Slots Used:                41 (max 41)
+Successful lookaside attempts:       41
+Lookaside failures due to size:      0
+Lookaside failures due to OOM:       0
+Pager Heap Usage:                    4968 bytes
+Page cache hits:                     0
+Page cache misses:                   0
+Page cache writes:                   0
+Page cache spills:                   0
+Schema Heap Usage:                   0 bytes
+Statement Heap/Lookaside Usage:      0 bytes
+Bytes received by read():            20176
+Bytes sent to write():               0
+Read() system calls:                 18
+Write() system calls:                0
+Bytes read from storage:             20176
+Bytes written to storage:            0
+Cancelled write bytes:               0","QUERY PLAN
+|--SCAN partsupp
+|--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH part USING INTEGER PRIMARY KEY (rowid=?)
+|--CORRELATED SCALAR SUBQUERY 1
+|  |--SEARCH partsupp USING INDEX sqlite_autoindex_PARTSUPP_1 (PS_PARTKEY=?)
+|  |--SEARCH supplier USING INTEGER PRIMARY KEY (rowid=?)
+|  |--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|  `--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH nation USING INTEGER PRIMARY KEY (rowid=?)
+|--SEARCH region USING INTEGER PRIMARY KEY (rowid=?)
+`--USE TEMP B-TREE FOR ORDER BY",0.0

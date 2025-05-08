@@ -1,2 +1,2 @@
 # databaseFinal
-database management final project
+see analysis folder for detailed summary statistics plots
